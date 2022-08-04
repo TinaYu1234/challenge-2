@@ -1,0 +1,183 @@
+/* Placing necessary colours in var(iables) for easier and more consistent work. Instead of changing every colour individually, once the colours are assigned to the target elements, everything can be changed painlessly from here!*/
+:root { 
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsla(216, 12%, 54%, 0.205);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    }
+  
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    
+    html{
+        font-size: 62.5%;
+    }
+    
+    body{
+        font-family: 'Overpass', sans-serif;
+        background-color: var(--veryDarkBlue);
+        Font-size: 15px;
+        }
+      
+      
+    .container{
+        box-sizing: border-box;
+        border:1px transparent; 
+        height:100vh;
+        width:100vw;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ 
+  
+    
+    .card{
+        background-color: var(--darkBlue);
+        border:1px transparent;
+        width: 28%;
+        height:310px;
+        border-radius: 1.5em;
+        padding:2.5rem;
+        
+    }
+
+
+
+
+    .star{
+        background-color:var(--mediumGrey);
+        height:3rem;
+        width:3rem;
+        padding:1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+img{
+    width:1.4rem;
+}
+    
+    h2{
+        font-size:2.4rem;
+        color:var(--white);
+       margin-top:1.6rem;
+    }
+   
+    
+    .paragraphy{
+        font-size:1.4rem;
+        color:var(--lightGrey);
+        margin-top:1rem;
+        line-height: 2.2rem;
+
+    }
+
+    .rating-wrapper{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+
+    .rating-btn{
+        color:var(--lightGrey);
+        margin-top: 1rem;
+       font-size:1.4rem;
+       background-color: var(--mediumGrey);
+       height:3.9rem;
+       width:3.9rem;
+       padding:1.3rem;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+    }
+    .rating-btn:hover{
+        background-color:var(--orange);
+        color:var(--white);
+        cursor:pointer;
+    }
+    .rating-btn:active{
+        background-color: var(--lightGrey);
+        color:var(white);
+    }    
+    
+
+    .submit{
+        background-color: var(--orange);
+        color:var(--white);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+        font-size: 1.35rem;
+        border-radius: 4rem;
+        padding:1rem;
+        letter-spacing: 0.1rem;
+}
+
+.submit:hover{
+    background-color: var(--white);
+    color:var(--orange);
+    cursor: pointer;
+}
+
+
+.card-container-2{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.phone img{
+
+    height:80%;
+    width:80%;
+    padding:1rem;
+}
+
+
+.result{
+        background-color: var(--mediumGrey);
+        color: var(--orange);
+        border-radius: 1em;
+        padding: 0.3em 1.3em;
+        margin-bottom: 1.5em;
+       font-size:1.2rem;
+}
+
+h1{
+    font-size:2.8rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    color:var(--white);
+    margin-bottom: 0.7rem;
+}
+
+p{
+    font-size:1.3rem;
+    margin-top: 0.7rem;
+    text-align: center;
+    color:var(--lightGrey);
+    
+
+}
+.card-container-2.hide{
+    display:none;
+}
